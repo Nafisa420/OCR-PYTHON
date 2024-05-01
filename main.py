@@ -44,7 +44,7 @@ def convertFile():
         messagebox.showwarning("showwarning", "Please select file.")
         return
 
-    pytesseract.pytesseract.tesseract_cmd = r'resources\Tesseract-OCR\tesseract'
+    pytesseract.pytesseract.tesseract_cmd = r'C:\Program Files\Tesseract-OCR\tesseract'
 
     image= Image.open(data[0])
     text = pytesseract.image_to_string(image)
